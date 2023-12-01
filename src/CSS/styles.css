@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: serif;
+    height: 100%
+}
+
+img,
+video {
+    max-width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header,
+footer {
+    flex: 1 1 10vh;
+}
+
+main {
+    flex: 1 1 80vh;
+}
+
+#menu-list {
+    display: none;
+}
+
+header {
+    justify-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    background-color: #808080;
+    justify-content: end;
+    padding: 15px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    background: lightgrey;
+    /* align-items: center; */
+}
+
+.menu-icon img {
+    height: 2vw;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+    background-image: url(../images/background.avif);
+    background-size: cover;
+    height: 50vw;
+    margin-bottom: 5px;
+}
+
+.description {
+    font-size: 2vw;
+}
+
+.hero hgroup {
+    color: lightcyan;
+    font-size: 2vw;
+
+}
+
+.brief-intro {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hobbyAndContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brief-intro img {
+    width: 50vw;
+}
+
+.drop-down img {
+    height: 4vh;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+}
+
+.links :hover {
+    color: brown;
+}
+
+.callToActionButton {
+    border: bisque;
+    border-radius: 10px;
+    background: lightblue;
+    padding: 5px;
+    margin: 3px;
+}
+
+.callToActionButton :hover {
+    background-color: rgb(69, 89, 96);
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+}
+
+.project img {
+    flex-grow: 1;
+    flex-shrink: 1;
+    max-width: 270px;
+}
+
+.skillSet {
+    border-collapse: collapse;
+    justify-content: start;
+}
+
+.skillSet,
+.skillSet th,
+.skillSet td {
+    border: 1px solid black;
+}
+
+.side {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.side>div {
+    flex: 0 1 0;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+}
+
+.education img {
+    flex: 1 1 auto;
+}
+
+.table {
+    flex-grow: 1;
+}
+
+aside {
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    background: beige;
+    ;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+aside li {
+    padding: 5px;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog-wrapper main,
+.contact-wrapper main {
+    display: flex;
+    align-items: center;
+    padding: 30px 70px 0;
+}
+
+.blog-wrapper main div,
+.blog-card {
+    margin: 30px;
+}
+
+article {
+    border: 1px solid #ccc;
+}
+
+footer {
+    align-self: flex-end;
+    background: #808080;
+    font-size: 1vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer img {
+    height: 2vw;
+
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.input {
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: lightblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(69, 89, 96);
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 255, 255, 0.178);
+    background: beige;
+    padding: 10px;
+    margin: 5px;
+}
+
+.about-wrapper {
+    text-align: center;
+}
+
+.about-wrapper main div,
+.portfolio-wrapper main .project {
+    margin: 15px;
+}
+
+.portfolio-wrapper main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
